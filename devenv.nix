@@ -17,6 +17,7 @@
   enterShell = ''
     hello
     git --version
+    ${pkgs.bundler}/bin/bundle install
   '';
 
   # https://devenv.sh/languages/
