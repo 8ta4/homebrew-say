@@ -8,7 +8,6 @@ class Say < Formula
 
   depends_on 'haskell-stack' => :build
   depends_on 'pipenv' => :build
-
   depends_on 'lame'
   depends_on 'openjdk@17'
   depends_on 'portaudio'
@@ -25,7 +24,6 @@ class Say < Formula
   def post_install
     cd libexec do
       ENV['PIPENV_VENV_IN_PROJECT'] = 'True'
-
       system 'pipenv', 'install'
     end
   end
