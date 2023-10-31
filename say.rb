@@ -35,6 +35,9 @@ class Say < Formula
     chmod 0o755, libexec / 'say.sh'
   end
 
+  # The 'pipenv install' command is placed in the 'post_install' method instead of the 'install' method.
+  # When 'pipenv install' is run in the 'install' method, it leads to an error when running 'say'.
+  # However, when it is run in the 'post_install' method, no such error occurs.
   def post_install
     cd libexec do
       ENV['PIPENV_VENV_IN_PROJECT'] = 'True'
