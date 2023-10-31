@@ -7,17 +7,19 @@ class Say < Formula
 
   depends_on 'haskell-stack' => :build
   depends_on 'pipenv' => :build
+
   depends_on 'lame'
   depends_on 'openjdk@17'
   depends_on 'portaudio'
   depends_on 'python@3.10'
+
+  depends_on 'koekeishiya/formulae/skhd'
 
   def install
     libexec.install Dir['*']
     cd libexec / 'hs' do
       system 'stack', '--local-bin-path', '.', 'install'
     end
-
     write_script
 
     # Link the script to the bin directory
