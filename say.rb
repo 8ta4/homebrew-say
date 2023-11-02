@@ -2,8 +2,8 @@
 
 # This class defines a Homebrew formula for the 'say' command-line tool.
 class Say < Formula
-  url 'https://github.com/8ta4/say/releases/download/v0.1.2/say.tar.gz'
-  sha256 '498f54779763b50346fe8b7d665061fa98a0a471755bc435ba824939ce914dd9'
+  url 'https://github.com/8ta4/say/releases/download/v0.1.3/say.tar.gz'
+  sha256 '22b3a8780804844f458c2284fb9a3dfd630f07cb9497018c5d234d2f1bc25e3d'
 
   depends_on 'haskell-stack' => :build
   depends_on 'pipenv' => :build
