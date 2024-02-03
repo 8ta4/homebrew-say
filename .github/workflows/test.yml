@@ -27,10 +27,5 @@ jobs:
       - name: Build the devenv shell and run any pre-commit hooks
         run: devenv ci
 
-      # https://github.com/Homebrew/actions/blob/55e35ac78132cc31ce174408f40a9676e64aa0e2/setup-homebrew/README.md?plain=1#L10-L12
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@55e35ac78132cc31ce174408f40a9676e64aa0e2 # pin@55e35ac78132cc31ce174408f40a9676e64aa0e2
-
       - name: Install formula
-        # Without this `--cask`, Homebrew tries to interpret `say.rb` as a formula, leading to a warning.
-        run: brew install --cask Casks/say.rb
+        run: brew install Casks/say.rb
