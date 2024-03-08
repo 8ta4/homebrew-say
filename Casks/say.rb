@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 cask 'say' do
-  version '0.7.1'
+  version '0.8.0'
   url "https://github.com/8ta4/say/releases/download/v#{version}/say.dmg"
-  sha256 '9b1be52c63ba419ac4cd350405fcc2313e77b312f04bd27c21bdf009bffcd114'
+  sha256 '3c73fdc9de57c2774419bbeb29603b7917ad4a8bba7fef0c8ad425e9707795c4'
   depends_on formula: 'ffmpeg'
   depends_on cask: 'visual-studio-code'
   app 'say.app'
