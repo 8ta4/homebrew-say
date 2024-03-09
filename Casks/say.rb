@@ -7,7 +7,6 @@ cask 'say' do
   depends_on formula: 'ffmpeg'
   depends_on cask: 'visual-studio-code'
   app 'say.app'
-
   # Workaround for the error: "say.app is damaged and can't be opened. You should move it to the Trash."
   # This error occurs when opening the app.
   # The following command clears the extended attributes of the file, resolving the issue.
