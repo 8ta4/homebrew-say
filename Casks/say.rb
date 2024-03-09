@@ -1,13 +1,12 @@
 # frozen_string_literal: true
 
 cask 'say' do
-  version '0.8.0'
+  version '0.8.1'
   url "https://github.com/8ta4/say/releases/download/v#{version}/say.dmg"
-  sha256 '3c73fdc9de57c2774419bbeb29603b7917ad4a8bba7fef0c8ad425e9707795c4'
+  sha256 'b3797fb27f82022e3e4c5d0ad314009a2fea3a151a2355e0b1f11e74810a96d0'
   depends_on formula: 'ffmpeg'
   depends_on cask: 'visual-studio-code'
   app 'say.app'
-
   # Workaround for the error: "say.app is damaged and can't be opened. You should move it to the Trash."
   # This error occurs when opening the app.
   # The following command clears the extended attributes of the file, resolving the issue.
