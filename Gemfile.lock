@@ -3,8 +3,9 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  arm64-darwin-23
 
 DEPENDENCIES
 
 BUNDLED WITH
-   2.4.13
+   2.5.6
